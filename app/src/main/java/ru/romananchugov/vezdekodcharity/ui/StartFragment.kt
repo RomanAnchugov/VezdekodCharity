@@ -1,4 +1,4 @@
-package ru.romananchugov.vezdekodcharity
+package ru.romananchugov.vezdekodcharity.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_start.*
 import kotlinx.android.synthetic.main.layout_toolbar.*
 import kotlinx.android.synthetic.main.layout_toolbar.view.*
+import ru.romananchugov.vezdekodcharity.R
 
 class StartFragment : Fragment() {
     override fun onCreateView(

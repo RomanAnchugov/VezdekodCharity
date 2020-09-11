@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:elevation="8dp"
+        app:elevation="8dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageLoadBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_load_image_ripple"
+                        android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/imageDeleteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="8dp"
+                    android:src="@drawable/ic_close_white"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/imageContainer"
+                    app:layout_constraintTop_toTopOf="@id/imageContainer"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/imageLoadHint"
+                    style="@style/TitleText.Accent.Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:text="Загрузить обложку"
+                    app:drawableStartCompat="@drawable/ic_image"
+                    app:drawableTint="@color/colorAccent"
+                    app:layout_constraintBottom_toBottomOf="@id/imageContainer"
+                    app:layout_constraintEnd_toEndOf="@id/imageContainer"
+                    app:layout_constraintStart_toStartOf="@id/imageContainer"
+                    app:layout_constraintTop_toTopOf="@id/imageContainer" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <include
+                android:id="@+id/paymentNameInput"
+                layout="@layout/layout_text_input" />
+
+            <include
+                android:id="@+id/paymentAmountInput"
+                layout="@layout/layout_text_input" />
+
+            <include
+                android:id="@+id/paymentTarget"
+                layout="@layout/layout_text_input" />
+
+            <include
+                android:id="@+id/paymentDescription"
+                layout="@layout/layout_text_input" />
+
+            <include
+                android:id="@+id/whereToGetMoneyContainer"
+                layout="@layout/layout_dropdown" />
+
+            <include
+                android:id="@+id/authorContainer"
+                layout="@layout/layout_dropdown" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmBtn"
+                style="@style/PrimaryBtn.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

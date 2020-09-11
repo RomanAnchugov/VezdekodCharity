@@ -6,7 +6,7 @@
     app:startDestination="@id/startFragment">
     <fragment
         android:id="@+id/startFragment"
-        android:name="ru.romananchugov.vezdekodcharity.StartFragment"
+        android:name="ru.romananchugov.vezdekodcharity.ui.StartFragment"
         android:label="StartFragment" >
         <action
             android:id="@+id/action_startFragment_to_paymentTypeFragment"
@@ -14,7 +14,20 @@
     </fragment>
     <fragment
         android:id="@+id/paymentTypeFragment"
-        android:name="ru.romananchugov.vezdekodcharity.PaymentTypeFragment"
+        android:name="ru.romananchugov.vezdekodcharity.ui.PaymentTypeFragment"
         android:label="fragment_payment_type"
-        tools:layout="@layout/fragment_payment_type" />
+        tools:layout="@layout/fragment_payment_type" >
+        <action
+            android:id="@+id/action_paymentTypeFragment_to_paymentCreationFragment"
+            app:destination="@id/paymentCreationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentCreationFragment"
+        android:name="ru.romananchugov.vezdekodcharity.ui.PaymentCreationFragment"
+        android:label="fragment_payment_creation"
+        tools:layout="@layout/fragment_payment_creation" >
+        <argument
+            android:name="paymentType"
+            app:argType="ru.romananchugov.vezdekodcharity.model.PaymentType" />
+    </fragment>
 </navigation>
