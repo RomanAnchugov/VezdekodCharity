@@ -13,4 +13,8 @@
     <color name="lightBackground">#F5F5F5</color>
     <color name="lightStroke">#14000000</color>
     <color name="lightIcon">#B8C1CC</color>
+
+    <color name="inactiveButton">#3F8AE0</color>
+
+
 </resources>
