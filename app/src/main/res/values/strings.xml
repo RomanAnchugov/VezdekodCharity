@@ -8,4 +8,13 @@
 
     <!--Payment Type-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Additional-->
+    <string name="author">Автор</string>
+    <string name="example_name">Матвей Правосудов</string>
+    <string name="end_tag">Сбор завершится</string>
+    <string name="end_when_collected">Когда соберём сумму</string>
+    <string name="end_at_date">В определённую дату</string>
+    <string name="select_date">Выберите дату</string>
+    <string name="end_date">Дата окончания</string>
 </resources>
