@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VezdekodCharity</string>
+
+    <!--Start-->
+    <string name="start_title">Пожертвования</string>
+    <string name="start_empty_description">У вас пока нет сборов.\n Начните доброе дело.</string>
+    <string name="start_create_action">Создать сбор</string>
+
+    <!--Payment Type-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

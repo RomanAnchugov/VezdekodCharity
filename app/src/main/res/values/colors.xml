@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F8AE0</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="lightText">#818C99</color>
+    <color name="lightHeader">#3F8AE0</color>
+    <color name="lightSeparator">#D7D8D9</color>
+    <color name="lightButton">#4986CC</color>
+    <color name="lightBackground">#F5F5F5</color>
+    <color name="lightStroke">#14000000</color>
+    <color name="lightIcon">#B8C1CC</color>
+</resources>
