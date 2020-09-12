@@ -10,11 +10,13 @@
     <color name="lightHeader">#3F8AE0</color>
     <color name="lightSeparator">#D7D8D9</color>
     <color name="lightButton">#4986CC</color>
+    <color name="lightButtonDisabled">#664986CC</color>
     <color name="lightBackground">#F5F5F5</color>
     <color name="lightStroke">#14000000</color>
     <color name="lightIcon">#B8C1CC</color>
     <color name="lightIconTertiary">#B8C1CC</color>
     <color name="lightTextSubhead">#6D7885</color>
     <color name="lightTextPlaceholder">#818C99</color>
+    <color name="colorAccent30pc">#4D3F8AE0</color>
 
 </resources>

@@ -29,5 +29,41 @@
         <argument
             android:name="paymentType"
             app:argType="ru.romananchugov.vezdekodcharity.model.PaymentType" />
+        <action
+            android:id="@+id/action_paymentCreationFragment_to_additionalFragment"
+            app:destination="@id/additionalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/additionalFragment"
+        android:name="ru.romananchugov.vezdekodcharity.ui.AdditionalFragment"
+        android:label="fragment_additional"
+        tools:layout="@layout/fragment_additional" >
+        <action
+            android:id="@+id/action_additionalFragment_to_feedSnippetFragment"
+            app:destination="@id/feedSnippetFragment" />
+        <argument
+            android:name="paymentData"
+            app:argType="ru.romananchugov.vezdekodcharity.model.PaymentData" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedSnippetFragment"
+        android:name="ru.romananchugov.vezdekodcharity.ui.FeedSnippetFragment"
+        android:label="fragment_feed_snippet"
+        tools:layout="@layout/fragment_feed_snippet" >
+        <argument
+            android:name="paymentData"
+            app:argType="ru.romananchugov.vezdekodcharity.model.PaymentData" />
+        <action
+            android:id="@+id/action_feedSnippetFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="ru.romananchugov.vezdekodcharity.ui.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <argument
+            android:name="paymentData"
+            app:argType="ru.romananchugov.vezdekodcharity.model.PaymentData" />
     </fragment>
 </navigation>
