@@ -3,6 +3,7 @@ package ru.romananchugov.vezdekodcharity.ui
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.text.InputType
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -62,6 +63,7 @@ class PaymentCreationFragment : Fragment() {
             PaymentType.REGULAR -> "Сколько нужно в месяц?"
             PaymentType.TARGET -> "Сколько нужно собрать?"
         }
+        paymentAmountInput.inputFieldEt.inputType = InputType.TYPE_CLASS_NUMBER
 
         paymentTarget.inputTitleTv.text = "Цель"
         paymentTarget.inputFieldEt.hint = when (args.paymentType) {

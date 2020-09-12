@@ -49,7 +49,8 @@ class FeedSnippetFragment : Fragment() {
                 progressIndicator.layoutParams =
                     (progressIndicator.layoutParams as ConstraintLayout.LayoutParams).apply {
                         if (width < progress.width) {
-                            width += (progress.width * 0.1).toInt()
+                            width =
+                                (width + (progress.width * 0.1).toInt()).coerceAtMost(progress.width)
                         }
                         if (width > 0) {
                             paymentStatus.text =
