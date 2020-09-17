@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/startFragment">
+    app:startDestination="@id/podcastCreateFragment">
     <fragment
         android:id="@+id/startFragment"
         android:name="ru.romananchugov.vezdekodcharity.ui.StartFragment"
@@ -66,4 +66,22 @@
             android:name="paymentData"
             app:argType="ru.romananchugov.vezdekodcharity.model.PaymentData" />
     </fragment>
+    <fragment
+        android:id="@+id/podcastCreateFragment"
+        android:name="ru.romananchugov.vezdekodcharity.PodcastCreateFragment"
+        android:label="fragment_podcast_create"
+        tools:layout="@layout/fragment_podcast_create" >
+        <action
+            android:id="@+id/action_podcastCreateFragment_to_podcastDescriptionFragment"
+            app:destination="@id/podcastDescriptionFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/podcastDescriptionFragment"
+        android:name="ru.romananchugov.vezdekodcharity.PodcastDescriptionFragment"
+        android:label="fragment_podcast_description"
+        tools:layout="@layout/fragment_podcast_description" />
 </navigation>
